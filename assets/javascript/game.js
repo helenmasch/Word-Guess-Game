@@ -2,9 +2,12 @@
 // Variables to guess which word 
 var words = ["Tiesto", "Avicii", "Eric Prydz", "Armin Van Buuren", "Above and Beyond", "Carl Cox"];
 
-
-
+// Variables by ID
+var numberWins = document.getElementById("number-wins");
+var guessWord = document.getElementById("guess-word");
+var button = document.getElementById("button");
 var guessesRemaining = document.getElementById("guesses-remaining");
+var lettersGuessed = document.getElementById("letters-guessed");
 
 // Variables for tracking our wins, losses and ties. They begin at 0.
 var wins = 0;
