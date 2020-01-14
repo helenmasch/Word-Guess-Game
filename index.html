@@ -3,29 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Game Title -->
         <title>Guess That Song</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <script src="./assets/javascript/game.js"></script>
+        <!-- CSS Stylesheet-->
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     </head>
 
     <body>
-        <div class="container"></div>
+        <div>
 
-        
-        <h1> Word Guess</h1>
-        <h4> House Music Style </h4>
+
+        <h1> Guess that DJ</h1>
 
         <h5> Press any key to get started! </h5>
-        <h5> Wins </h5>
+        <h5  id=number-wins> Wins </h5>
         <h5> Current Word </h5>
+        <h5 id=guess-word> _ _ _ _ _</h5>
 
          <h5>Number of guesses remaining </h5>
 
-         <h5> 10 </h5>
+         
+         <h5 id=guesses-remaining> 10 </h5>
 
          <h5> Letters already guessed </h5>
 
         </div>
+        
+        <script src="./assets/javascript/game.js"></script>
+
     </body>
 </html>

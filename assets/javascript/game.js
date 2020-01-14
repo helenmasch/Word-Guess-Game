@@ -1,6 +1,7 @@
 
-// Variables to guess the word 
-var words = [Tiesto, Avicii, Eric Prydz, Armin Van Buuren, Above and Beyond, Carl Cox];
+// Variables to guess which word 
+var words = ["Tiesto", "Avicii", "Eric Prydz", "Armin Van Buuren", "Above and Beyond", "Carl Cox"];
+var guessesRemaining = document.getElementById("guesses-remaining");
 
 // Variables for tracking our wins, losses and ties. They begin at 0.
 var wins = 0;
@@ -17,6 +18,7 @@ document.onkeypress = function(event) {
 // Set up the answer array
  var answerArray = [];
 
+// 
  for (var i = 0; i < word.length; i++) {
     answerArray[i] = "_";
  }
