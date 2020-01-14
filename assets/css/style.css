@@ -1,5 +1,19 @@
+
 body {
     background-color: aqua;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+
+
 }
+
+#button {
+    background-color: #4CAF50;
+    border: solid;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
