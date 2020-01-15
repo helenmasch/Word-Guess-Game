@@ -16,7 +16,7 @@ var lettersGuessed = document.getElementById("letters-guessed");
 // Variables for tracking our wins, losses and ties. They begin at 0.
 var wins = [0];
 var losses = 0;
-var guesses = 10;
+var guesses = [10];
 
 // Grabbing Random Word from arrays in variable
 var getRandomWord = function(array) {
@@ -25,8 +25,10 @@ var getRandomWord = function(array) {
 
 // When the user presses a key, it will run the following function...
 document.onkeyup = function(event) {
-        // Make sure key pressed is an alpha character, if letter is pressed the !pauseGame will NOT pause the game and keep running)
-        if (isAlpha(event.key) && !pauseGame) {
+        
+// Make sure key pressed is an alpha character, if letter is pressed the !pauseGame will NOT pause the game and keep running)
+var isAlpha = function(ch) {
+    if (isAlpha(event.key) && !pauseGame)
             checkForLetter(event.key.toUpperCase())
         }
 
@@ -38,18 +40,25 @@ var answerArray = [];
 for (var i = 0; i < djs.length; i++) {
    answerArray[i] = "_";
 
+// Shows the remaining letters are the length of the word.
 var remainingLetters = word.length;
 
+while (remainingLetters > 0) {
+    // Game code goes here
+    // Show the player their progress
+    // Take input from the player
+    // Update answerArray and remainingLetters for every correct guess
+   }
 
 // Computer needs to reveal letters
 
 
 // User's guesses needs to decrease 
+else {
+    guessesRemaining--;
 
  }
 
-
- var remainingLetters = word.length;
 
  // 
 }
