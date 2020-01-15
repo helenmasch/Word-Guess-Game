@@ -33,19 +33,19 @@ document.onkeyup = function(event) {
 // Determines which key was pressed. 
 var userGuess = event.key; {
 
+// Set up the answer array, add "djs". (Returns letters in guess-word )
+var answerArray = [];
+for (var i = 0; i < djs.length; i++) {
+   answerArray[i] = "_";
+
+var remainingLetters = word.length;
+
 
 // Computer needs to reveal letters
 
 
 // User's guesses needs to decrease 
 
-
-// Set up the answer array, add "djs"
- var answerArray = ["djs"];
-
-// 
- for (var i = 0; i < djs.length; i++) {
-    answerArray[i] = "_";
  }
 
 
