@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 // Variables to guess which word 
-var djs = ["Tiesto", "Avicii", "Eric Prydz", "Armin Van Buuren", "Above and Beyond", "Carl Cox"];
+var djs = ["tiesto", "avicii", "eric prydz", "armin van buuren", "above and beyond", "carl cox"];
 
 // Sets the maximum number of guesses. (Will never change)
 const maxGuess = 10
