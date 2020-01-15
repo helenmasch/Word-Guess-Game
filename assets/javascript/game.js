@@ -3,7 +3,7 @@ $(document).ready(function() {
 // Variables to guess which word 
 var djs = ["Tiesto", "Avicii", "Eric Prydz", "Armin Van Buuren", "Above and Beyond", "Carl Cox"];
 
-// Sets the maximum number of guesses. 
+// Sets the maximum number of guesses. (Will never change)
 const maxGuess = 10
 
 // Variables that hold a value to a specific ID
@@ -25,9 +25,13 @@ var getRandomWord = function(array) {
 
 // When the user presses a key, it will run the following function...
 document.onkeyup = function(event) {
+        // Make sure key pressed is an alpha character, if letter is pressed the !pauseGame will NOT pause the game and keep running)
+        if (isAlpha(event.key) && !pauseGame) {
+            checkForLetter(event.key.toUpperCase())
+        }
 
 // Determines which key was pressed. 
-var userGuess = event.key;
+var userGuess = event.key; {
 
 
 // Computer needs to reveal letters
